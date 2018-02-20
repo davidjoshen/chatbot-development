@@ -1,0 +1,179 @@
+{
+  "tag": "main_node",
+  "child_node": [
+    {
+      "tag": "conversation_start",
+      "child_status": false,
+      "triggered_by": [
+        "greeting"
+      ],
+      "response_by": [
+        "Hello thanks for visiting",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "operating_time",
+      "child_status": false,
+      "triggered_by": [
+        "hours"
+      ],
+      "response_by": [
+        "We're open everyday 9am-9pm",
+        "Our hours are 9am - 9pm everyday"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "asking_rental_rental_type",
+      "child_status": false,
+      "triggered_by": [
+        "mopeds"
+      ],
+      "response_by": [
+        "We rent Yamaha, Piaggio and Vespa mopeds",
+        "We have Piaggio,Vespa and Yamaha mopeds"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "asking_rental",
+      "child_status": true,
+      "triggered_by": [
+        "rental"
+      ],
+      "response_by": [
+        "Are you looking to rent today or later this week?"
+      ],
+      "child_node": [
+        {
+          "tag": "today",
+          "child_status": false,
+          "triggered_by": [
+            "today"
+          ],
+          "response_by": [
+            "For rentals today please call 1-800-MYMOPED"
+          ],
+          "child_node": [],
+          "jump_status": true,
+          "jump_to": "main_node"
+        },
+        {
+          "tag": "other_days",
+          "child_status": false,
+          "triggered_by": [
+            "not_today"
+          ],
+          "response_by": [
+            "For rentals today please call 1-800-MYMOPED"
+          ],
+          "child_node": [],
+          "jump_status": true,
+          "jump_to": "main_node"
+        },
+        {
+          "tag": "other_conversation",
+          "child_status": false,
+          "triggered_by": [
+            "greeting",
+            "goodbye",
+            "thanks",
+            "hours",
+            "mopeds",
+            "payments",
+            "opentoday",
+            "rental"
+          ],
+          "response_by": [
+            "NOT RESPONSE"
+          ],
+          "child_node": [],
+          "jump_status": true,
+          "jump_to": "main_node"
+        }
+      ],
+      "jump_status": false,
+      "jump_to": ""
+    },
+    {
+      "tag": "open_today",
+      "child_status": false,
+      "triggered_by": [
+        "opentoday"
+      ],
+      "response_by": [
+        "Today we are open from 9am to 9pm",
+        "Our hours are 9am-9pm everyday"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "thankful_note",
+      "child_status": false,
+      "triggered_by": [
+        "thanks"
+      ],
+      "response_by": [
+        "Happy to help",
+        "Any time!",
+        "My pleasure"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "payment_methods",
+      "child_status": false,
+      "triggered_by": [
+        "payments"
+      ],
+      "response_by": [
+        "We accept VISA, Mastercard and AMEX",
+        "We accept most major credit cards"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "goodbye_",
+      "child_status": false,
+      "triggered_by": [
+        "goodbye"
+      ],
+      "response_by": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    },
+    {
+      "tag": "anything_else",
+      "child_status": false,
+      "triggered_by": [
+        "anything_else"
+      ],
+      "response_by": [
+        "Please be more explicit, I'm here to help you reserve you Moped"
+      ],
+      "child_node": [],
+      "jump_status": true,
+      "jump_to": "main_node"
+    }
+  ]
+}
