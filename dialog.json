@@ -14,7 +14,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "operating_time",
@@ -28,7 +29,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "asking_rental_rental_type",
@@ -42,7 +44,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "asking_rental",
@@ -65,7 +68,8 @@
           ],
           "child_node": [],
           "jump_status": true,
-          "jump_to": "main_node"
+          "jump_to": "main_node",
+          "none_response": false
         },
         {
           "tag": "other_days",
@@ -78,7 +82,8 @@
           ],
           "child_node": [],
           "jump_status": true,
-          "jump_to": "main_node"
+          "jump_to": "main_node",
+          "none_response": false
         },
         {
           "tag": "other_conversation",
@@ -98,11 +103,27 @@
           ],
           "child_node": [],
           "jump_status": true,
-          "jump_to": "main_node"
+          "jump_to": "main_node",
+          "none_response": true
+        },
+        {
+          "tag": "anything_else",
+          "child_status": false,
+          "triggered_by": [
+            "anything_else"
+          ],
+          "response_by": [
+            "Please be more explicit do you want to rent a Moped Today or any other day?"
+          ],
+          "child_node": [],
+          "jump_status": true,
+          "jump_to": "asking_rental",
+          "none_response": false
         }
       ],
       "jump_status": false,
-      "jump_to": ""
+      "jump_to": "",
+      "none_response": false
     },
     {
       "tag": "open_today",
@@ -116,7 +137,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "thankful_note",
@@ -131,7 +153,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "payment_methods",
@@ -145,7 +168,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "goodbye_",
@@ -160,7 +184,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     },
     {
       "tag": "anything_else",
@@ -173,7 +198,8 @@
       ],
       "child_node": [],
       "jump_status": true,
-      "jump_to": "main_node"
+      "jump_to": "main_node",
+      "none_response": false
     }
   ]
 }
